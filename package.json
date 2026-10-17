@@ -1,0 +1,16 @@
+{
+  "name": "newtonite-ops",
+  "private": true,
+  "description": "Operations Under Pressure — Newtonite engineering challenge",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix web",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix web",
+    "start": "npm run build && npm start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:web": "npm run dev --prefix web",
+    "test": "npm test --prefix server",
+    "typecheck": "npm run typecheck --prefix server && npm run typecheck --prefix web"
+  },
+  "engines": { "node": ">=22" }
+}
